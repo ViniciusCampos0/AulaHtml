@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>⚠️ PERIGO ⚠️</title>
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #ff3333;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        a button {
+            background-color: #1a1a1a;
+            color: #ff3333;
+            border: 2px solid #ff3333;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px red;
+        }
+
+        a button:hover {
+            background-color: #ff3333;
+            color: #0d0d0d;
+            box-shadow: 0 0 20px #ff3333, 0 0 40px #ff3333;
+            transform: scale(1.05);
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            color: #ffa;
+        }
+    </style>
 </head>
 <body>
-    <a href="./formatacao.html"><button>CLIQUE AQUI!</button></a>
+    <h1>⚠️ AVISO ⚠️</h1>
+    <p>Você não deveria clicar nesse botão... sério!</p>
+    <a href="./formatacao.html"><button>NÃO CLIQUE AQUI</button></a>
 </body>
 </html>
